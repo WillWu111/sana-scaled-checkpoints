@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "repository": "WillWu111/sana-scaled-checkpoints",
+  "release_tag": "sana-scaled-202609",
+  "created_at": "2026-10-13T12:23:42.180482+08:00",
+  "format": "raw byte parts; concatenate in manifest order; original checkpoint bytes are unchanged",
+  "files": [
+    {
+      "id": "sana-scaled-fm-attn-step200",
+      "output_directory": "20260918_sana_fm_attention_step200",
+      "filename": "hybrid_lora_step000200.pt",
+      "step": 200,
+      "attention_rule": "sana_scaled",
+      "initialization": "VDN-MiniMax-H3/stage-b-step-2000",
+      "objective": "data FM + 0.1 dense H3 final attention NMSE",
+      "bytes": 9227027323,
+      "sha256": "00c961a1ef8af497a030974be17c72690f0deb970394815d32c390a2990d7759",
+      "parts": [
+        {
+          "name": "sana-scaled-fm-attn-step200.pt.part01",
+          "bytes": 1900000000,
+          "sha256": "45739f76d90c51daa959b53318ed109cdd58b2875117e116167e951816f8febc"
+        },
+        {
+          "name": "sana-scaled-fm-attn-step200.pt.part02",
+          "bytes": 1900000000,
+          "sha256": "746a204d135895ad7aa33fa05e89a21fb463e17099155481aa76760e68bbd05a"
+        },
+        {
+          "name": "sana-scaled-fm-attn-step200.pt.part03",
+          "bytes": 1900000000,
+          "sha256": "6f627f21de3aa7d3b9d0581a0da944639c505e7b7c81138b155be9361f158b27"
+        },
+        {
+          "name": "sana-scaled-fm-attn-step200.pt.part04",
+          "bytes": 1900000000,
+          "sha256": "3e5c05f90a53d651ba3cac7ee0662bf782a2e8b0455836b49275dbba23c00549"
+        },
+        {
+          "name": "sana-scaled-fm-attn-step200.pt.part05",
+          "bytes": 1627027323,
+          "sha256": "2bf0fee6c3844ef3dc09114121d38e70a51301ff2d5ef7826049de4807b0073b"
+        }
+      ]
+    },
+    {
+      "id": "sana-scaled-fm-only-step1000",
+      "output_directory": "20260919_sana_fm_only_step1000",
+      "filename": "hybrid_lora_step001000.pt",
+      "step": 1000,
+      "attention_rule": "sana_scaled",
+      "initialization": "VDN-MiniMax-H3/stage-b-step-2000",
+      "objective": "pure data FM",
+      "bytes": 9227027323,
+      "sha256": "653c7477d434fb4679f1c0a608964f4bf85d718df7e79947fb8dfa225a783126",
+      "parts": [
+        {
+          "name": "sana-scaled-fm-only-step1000.pt.part01",
+          "bytes": 1900000000,
+          "sha256": "a8c1ef1edb42e64938d8e5726d1d018ac68d04c591bac532bd2ef8784e093775"
+        },
+        {
+          "name": "sana-scaled-fm-only-step1000.pt.part02",
+          "bytes": 1900000000,
+          "sha256": "259a7145b2938028af3eb11ad8d6971af41ecd426dcbc04b2d7f426315195007"
+        },
+        {
+          "name": "sana-scaled-fm-only-step1000.pt.part03",
+          "bytes": 1900000000,
+          "sha256": "78072dc50bfe269e0c977c8fa9ca38c3e8cfc7ce5a94a758826314ebe9d7cc35"
+        },
+        {
+          "name": "sana-scaled-fm-only-step1000.pt.part04",
+          "bytes": 1900000000,
+          "sha256": "93bb22bdae36c77ec9257fb96eb5a1a551601271676235730e563c487e763d52"
+        },
+        {
+          "name": "sana-scaled-fm-only-step1000.pt.part05",
+          "bytes": 1627027323,
+          "sha256": "d5333230c13479d1757849e00a5a95c7f72264450fe690c8361936032a15b01e"
+        }
+      ]
+    }
+  ]
+}
